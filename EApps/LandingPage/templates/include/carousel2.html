@@ -1,0 +1,34 @@
+{% load static %}
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {% for carousel in carousels %}
+        <div class="swiper-slide">
+        <img src="{{carousel.image.url}}" class="d-block w-100" style="max-height:300px" alt="{{carousel.title}}" id="caro-img" >
+        </div>
+        {% endfor %}
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+</div>
+
+    <!-- CSS -->
+<link rel="stylesheet" href="{% static 'css/carousel2.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<style>
+.swiper-button-prev,.swiper-button-next{
+  color: aliceblue!important;
+
+}
+</style>
+
+    <!-- Javascript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="{% static 'js/carousel2.js' %}"></script> 
+</div>

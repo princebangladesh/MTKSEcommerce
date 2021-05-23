@@ -1,0 +1,39 @@
+#caro-img{
+      margin: auto;
+      height: 300px; 
+      filter:brightness(60%)
+}
+#caro-icon{
+      visibility: hidden;
+}
+.carousel:hover #caro-icon{
+      visibility: visible;
+      transition: all ease-in-out 0.5s;
+}
+.carousel:hover .carousel-control-prev-icon{
+      transition: all 0.5s ease-in-out;
+      transform: translate(-25px,0);
+  }
+.carousel:hover .carousel-control-next-icon{
+      transition: all 0.5s ease-in-out;
+      transform: translate(25px,0);
+      
+}
+.carousel{
+      cursor: pointer;
+}
+
+@media(max-width:991px){
+      #caro-icon{
+            visibility: visible;
+      }
+      .carousel:hover .carousel-control-prev-icon{
+            transition: all 0.5s ease-in-out;
+            transform: translate(-10px,0);
+        }
+      .carousel:hover .carousel-control-next-icon{
+            transition: all 0.5s ease-in-out;
+            transform: translate(10px,0);
+            
+      }
+}
