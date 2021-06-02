@@ -1,9 +1,7 @@
-
-
 $(document).ready(function() {
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
-animateOut: 'fadeOut',
+	  animateOut: 'fadeOut',
 	  items: 1,
 	  loop: false,
 	  rewind:true,

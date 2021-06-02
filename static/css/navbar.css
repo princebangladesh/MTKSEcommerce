@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Bungee+Outline&family=Pattaya&family=Sigmar+One&display=swap');
+.letters{
+      display: inline-block;
+      line-height: 1rem;
+      transform-origin: 0 0;
+      font-weight: 1000;
+      letter-spacing: 2px;
+      font-family: 'Averia Libre', cursive;
+    }
+
+
 .sidebar, .overlay{
       position: fixed;
       top: 0;
@@ -228,11 +239,5 @@
       background-position: 75% 50%;
 }
 }
-.letters{
-  display: inline-block;
-  line-height: 1rem;
-  transform-origin: 0 0;
-  font-weight: 1000;
-  letter-spacing: 2px;
-}
+
 

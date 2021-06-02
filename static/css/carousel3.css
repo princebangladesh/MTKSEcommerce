@@ -1,8 +1,27 @@
+.caption{
+    padding: 0.5rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 60vw; 
+    height: 50%;
+    text-align: center;
+    visibility: hidden; 
+}
+
+.owl-item.active .caption{
+  visibility: visible;
+  animation-name: fadeInDown;
+  animation-delay: 1s;
+}
+
 .owl-carousel .item{
       padding:0 !important;
       height:250px!important;
     }
-    
+   
 .owl-carousel .owl-item div{
              position: relative;
              overflow: hidden;
@@ -19,28 +38,41 @@
            }
 
 .owl-prev,.owl-next{
-  width: 15px;
   height: 35%;
   position: absolute;  
-  top: 18%;
-  display: block !important;
-  z-index: 10;
+  top: 22%;
+  margin: 0;
+
+
 }
 .owl-prev:focus,.owl-next:focus{
   outline: none;
 }
 .owl-prev {
-  left: auto;
+  left: 10px;
 }
 
 .owl-next {
-  right: 20px;
+  right:10px;
 }
 
+
 .owl-prev .bx, .owl-next .bx{
-  font-size: 35px;
-} 
+  font-size: 50px;
+  color: #fff;
+  opacity: 0.6;
+}
+.owl-prev .bx:hover,.owl-next .bx:hover{
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+
 .owl-carousel .owl-dots {
+  position: absolute;
+  top:68%;
+  left:25%;
+  right:25%;
   text-align: center;
 
 
@@ -65,10 +97,28 @@
     width: 14px;
     height: 14px;
     content: '';
-    border: 1px solid #4d4d4d;
     border-radius: 50%; }
+    
 .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
       outline: none !important;
     }
 .owl-carousel .owl-dots .owl-dot.active {
       background: purple; }
+
+
+@media(min-width:720px){
+  .owl-prev,.owl-next{
+    visibility: hidden;
+  }
+  .owl-carousel:hover .owl-prev{
+    transition: all 0.5s ease-in-out;
+    transform: translate(10px,0);
+    visibility: visible;
+  }
+  .owl-carousel:hover .owl-next{
+    transition: all 0.5s ease-in-out;
+    transform: translate(-10px,0);
+    visibility: visible;
+  } 
+
+}

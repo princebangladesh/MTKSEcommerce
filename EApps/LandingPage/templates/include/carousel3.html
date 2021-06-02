@@ -3,6 +3,7 @@
 <div class="owl-carousel owl-theme">
       {% for carousel in carousels %}
       <div class="item">
+        <h2 class="caption animated">{{carousel.title}}</h2>
         <img src="{{carousel.image.url}}" style="max-height:200px">
       </div>
       {% endfor %}
