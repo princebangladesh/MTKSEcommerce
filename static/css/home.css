@@ -3,7 +3,7 @@ body {
       font-family: Lato,sans-serif;
     }
 
-#band h1{
+.section-title{
   font-family: Dosis, sans-serif;
   font-size: 32px;
   font-weight: 700;

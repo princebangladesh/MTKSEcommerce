@@ -1,0 +1,36 @@
+.wrapper{
+      padding: 5rem 7rem;
+
+}
+.line{
+      margin-bottom: 1rem;
+      border: 5px solid;
+      border-image-source: linear-gradient(to left, purple,cyan);
+      border-image-slice: 1;
+      padding: 2rem 0;
+      text-align: center;
+}
+
+#shanto{    
+      stroke:#072b2c;
+      fill:purple;
+      stroke-dasharray: 600;
+      opacity: 1;
+      animation: yellow 5s cubic-bezier(0,0.23,1,.1);
+    }
+    @keyframes yellow{
+      0%{opacity: 0;
+        fill:none;
+        stroke-dashoffset: 700;}
+      25%{
+
+            fill:rgba(255,255,255,0);
+            stroke-dashoffset: 1200;
+      }
+      50%{opacity: 10;
+            fill:purple;
+            stroke-dashoffset: 1200;}
+
+      100%{opacity: 10;
+        stroke-dashoffset: 1200;}
+    }

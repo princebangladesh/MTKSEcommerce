@@ -8,11 +8,15 @@
       <link rel="stylesheet" href="./animate.min.css">
 
       <script src="./wow.js"></script>
+      <script src="./texitilate.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-
+      <script src="https://cdn.rawgit.com/jschr/textillate/master/assets/jquery.lettering.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
+<h2 class="laters">
+    Welcome To MTKS world
+</h2>
   <div class="container">
     <h1 class="ml1">
     <span class="text-wrapper">
@@ -170,6 +174,11 @@
 <script>
 $(function(){
   new WOW().init(); 
+});
+$('.laters').textillate({ 
+  in: { effect: 'splat' },
+  out: { effect: 'foldUnfold', sync: true },
+  loop: true
 });
 </script>
 </body>
