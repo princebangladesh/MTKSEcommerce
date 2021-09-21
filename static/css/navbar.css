@@ -20,8 +20,8 @@
       float: left;      
 }
 
-.bx{
-      color:rgb(98, 197, 192);
+.navbar .bx{
+      color:papayawhip;
       cursor: pointer;
       height: 1.5rem;
       font-size: 25px;
@@ -63,11 +63,11 @@
       transition: all 0.5s ease;
       top: 0%;
       bottom: 0%;
-      background-color: #194242;
+      background-color: #0a1c24;
       
 }
 .navbar{
-      background-color: #055d80;
+      background-color: #0a1c24;
       font-family: cursive;
 
 
@@ -111,11 +111,19 @@
       animation: Spin .4s;
 }
 .front-icon .bx:hover{
-      color: cyan;
+      color:#4cf8f2;
       transition: all 0.5s ease-in-out;
       animation: Shake .4s;
 }
-
+.navbar i{
+      font-size: 24px;
+      color: papayawhip;
+      margin-bottom: 2px;
+      transition: 0.3s ease-in-out;
+}
+.navbar i:hover{
+      color:#1bb9b4
+}
 @media(min-width:992px){
       
       .nav-item:hover{
@@ -161,7 +169,7 @@
 .badge{
       position: absolute;
       top: 0;
-      right: -12px;      
+      right: -10px;      
       display:inline-block;
       min-width:8px;
       padding:3px 7px;

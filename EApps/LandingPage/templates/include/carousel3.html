@@ -1,6 +1,6 @@
 {% load static %}
 
-<div class="owl-carousel owl-theme">
+<div class="owl-carousel owl-theme main-slider">
       {% for carousel in carousels %}
       <div class="item">
         <h2 class="caption">{{carousel.title}}</h2>
@@ -10,7 +10,5 @@
           
 </div>
 
-<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
 <link rel="stylesheet" href="{% static 'css/carousel3.css' %}">
-<script src="{% static 'js/owl.carousel.min.js' %}"></script>
 <script src="{% static 'js/carousel3.js' %}"></script>

@@ -26,5 +26,38 @@ $(document).ready(function(){
       });
     } // End if
   });
-  
+  $('.product-slider').owlCarousel({
+    items:1,
+    autoplay:true,
+    autoplayTimeout:5000,
+    smartSpeed: 400,
+    autoplayHoverPause:true,
+    loop:true,
+    nav:true,
+    merge:true,
+    dots:false,
+    navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
+    responsive:{
+      0: {
+        items:2,
+      },
+      300: {
+        items:2,
+      },
+      480: {
+        items:2,
+      },
+      768: {
+        items:3,
+      },
+      1170: {
+        items:4,
+      },
+    }
+  });
+
+  $(".product-slider .product-btn i").click(function(){
+    $(this).toggleClass("bxs-check-circle")
+  })
+
 })

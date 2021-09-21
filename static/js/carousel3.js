@@ -13,7 +13,7 @@ $(document).ready(function() {
 	smartSpeed:400,
 	nav:true,
 	navText:["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],
-	// onTranslated: animateSlide,
+	onTranslate: animateSlide,
       // onTranslate: removeAnimation,
 	// onDrag:function () {
 	// 	item.addClass("fadeOutUp")
@@ -30,23 +30,24 @@ $(document).ready(function() {
 	// 	item.addClass("fadeInDown");
 	//   }
     
-	// function animateSlide() {
-	// 	item.removeClass("fadeInDown");
-	//   }
+	function animateSlide() {
+		$(".caption").hide()
+		setTimeout(() =>{$(".caption").show().textillate('start')},500)
+	  }
 
 	$(".owl-item:first .caption").textillate({
 		in:{effect:"fadeInUp",delayScale:1},
-		initialDelay:800
+		initialDelay:1000
 
 	});
 	$(".owl-item:not(:first) .caption").textillate({
 		in:{effect:"fadeInRightBig",delayScale:1},
 	});
-	owl.on('changed.owl.carousel',function(){		
-		$(".caption").hide()
-		setTimeout(() =>{$(".caption").show().textillate('start')},500)
-		;
-	  })
+	// owl.on('changed.owl.carousel',function(){		
+	// 	$(".caption").hide()
+	// 	setTimeout(() =>{$(".caption").show().textillate('start')},500)
+	// 	;
+	//   })
 	  
 	
 })

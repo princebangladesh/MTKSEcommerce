@@ -3,25 +3,284 @@
 {% block title %}First Class Ecommerce{% endblock title %}
 {% block content %}
 {% include 'include/carousel3.html' %}
+<div class="container py-3">
+<div class="row" id="banner1">
+    <div class="col-md-6 mb-4">
+        <div class="row">
+            <div class="col-12 mt-md-0 mt-4"> 
+                <a href="#"><img src="https://via.placeholder.com/570x270" alt="nowTrending"></a> 
+            </div>
+          <div class="col-6 mt-4"> 
+            <a href="#"><img src="https://via.placeholder.com/270x270" alt="campaigns"></a> 
+          </div>
+          <div class="col-6 mt-4"> 
+            <a href="#"><img src="https://via.placeholder.com/270x270" alt="lookbook"></a> 
+          </div>
 
-<div id="band" class="container text-center py-2 wow slideInUp">
+        </div>
+      </div>
+    <div class="col-md-6"> 
+            <a href="#"><img src="https://via.placeholder.com/570x570" alt="newArrivals"></a> 
+        </div>
+    </div>
+</div>
+<div id="banner2" class="text-center py-2">
     <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Featured Product</h2>
+        <div class="row">
+            <div class="col-lg-12  wow flipInX">
+                <div class="section-title">
+                    <h2>Featured Product</h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="owl-carousel product-slider wow slideInLeft">
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/product-1.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bx-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                            <div class="product-head">
+                                <div class="product-flow">
+                                    <h3>Iphone 12 Pro Max</h3>                            
+                                </div>
+                            </div>
+                        <div class="product-rate">
+                            <span class="present">1300$</span>
+                        </div>
+                        </div>
                     </div>
-                    <div class="featured__controls">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".oranges">Oranges</li>
-                            <li data-filter=".fresh-meat">Fresh Meat</li>
-                            <li data-filter=".vegetables">Vegetables</li>
-                            <li data-filter=".fastfood">Fastfood</li>
-                        </ul>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/tshirt3.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bx-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        <div class="product-detail">
+                        <div class="product-head">
+                            <div class="product-flow">
+                                <h3>Tshirts for Boy</h3>                            
+                            </div>
+                        </div>
+                        <div class="product-rate">
+                            <span class="present">20$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/tshirt4.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bx-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <div class="product-head">
+                                <div class="product-flow">
+                                    <h3>Hoodies For Men</h3>                           
+                                </div>
+                            </div>
+                        
+                        <div class="product-rate">
+                            <span class="present">40$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/tshirt5.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bx-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <h3>Hoodies</h3>
+                        <div class="product-rate">
+                            <span class="present">50$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/product-5.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bx-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <h3>S20 Ultra</h3>
+                        <div class="product-rate">
+                            <span class="present">25$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/product-4.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bx-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        <div class="product-detail">
+                        <div class="product-head">
+                                <div class="product-flow">
+                                    <h3>Samsung M31 Radiant Grey With offical Warranty</h3>                            
+                                </div>
+                        </div>
+                        <div class="product-rate">
+                            <span class="present">25$</span>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>    
+</div>
+<div id="banner2" class="text-center py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title wow flipInX">
+                    <h2>Trending Products</h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="owl-carousel product-slider wow slideInLeft">
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/product-1.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bxs-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <h3>Iphone 12 Pro Max</h3>
+                        <div class="product-rate">
+                            <span class="present">1300$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/tshirt3.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bxs-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        <div class="product-detail">
+                        <h3>Tshirts For Boy</h3>
+                        <div class="product-rate">
+                            <span class="present">20$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/tshirt4.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bxs-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <h3>Hoodies For Men</h3>
+                        <div class="product-rate">
+                            <span class="present">40$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/tshirt5.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bxs-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <h3>Hoodies</h3>
+                        <div class="product-rate">
+                            <span class="present">50$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/product-5.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bxs-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail">
+                        <h3>S20 Ultra</h3>
+                        <div class="product-rate">
+                            <span class="present">25$</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="land-product">
+                        <div class="land-pro-img">
+                            <img src="{% static 'img/product-4.png' %}">
+                            <ul class="product-btn">
+                              <li><a><i class='bx bxs-shopping-bag'></i></a></li>
+                              <li><a><i class='bx bx-heart'></i></a></li>
+                              <li><a><i class='bx bx-show'></i></a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </div>
 {% endblock content %}
 
