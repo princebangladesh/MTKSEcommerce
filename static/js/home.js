@@ -29,6 +29,7 @@ $(document).ready(function(){
   $('.product-slider').owlCarousel({
     items:1,
     autoplay:true,
+    margin:10,
     autoplayTimeout:5000,
     smartSpeed: 400,
     autoplayHoverPause:true,

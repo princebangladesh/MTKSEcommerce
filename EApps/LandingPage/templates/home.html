@@ -2,40 +2,42 @@
 {% load static %}
 {% block title %}First Class Ecommerce{% endblock title %}
 {% block content %}
+
 {% include 'include/carousel3.html' %}
 <div class="container py-3">
-<div class="row" id="banner1">
-    <div class="col-md-6 mb-4">
-        <div class="row">
-            <div class="col-12 mt-md-0 mt-4"> 
-                <a href="#"><img src="https://via.placeholder.com/570x270" alt="nowTrending"></a> 
+    <div class="row" id="banner1">
+        
+        <div class="col-md-6 mb-4">
+            <div class="row">
+                <div class="col-12 mt-md-0 mt-4"> 
+                    <a href="#"><img src="https://via.placeholder.com/570x270" alt="nowTrending"><strong>Electronics</strong></a> 
+                </div>
+            <div class="col-6 mt-4"> 
+                <a href="#"><img src="https://via.placeholder.com/270x270" alt="campaigns"><strong>Sports Kits</strong></a> 
             </div>
-          <div class="col-6 mt-4"> 
-            <a href="#"><img src="https://via.placeholder.com/270x270" alt="campaigns"></a> 
-          </div>
-          <div class="col-6 mt-4"> 
-            <a href="#"><img src="https://via.placeholder.com/270x270" alt="lookbook"></a> 
-          </div>
+            <div class="col-6 mt-4"> 
+                <a href="#"><img src="https://via.placeholder.com/270x270" alt="lookbook"><strong>Gadgets</strong></a> 
+            </div>
 
+            </div>
         </div>
-      </div>
-    <div class="col-md-6"> 
-            <a href="#"><img src="https://via.placeholder.com/570x570" alt="newArrivals"></a> 
+        <div class="col-md-6"> 
+            <a href="#"><img src="https://via.placeholder.com/570x570" alt="lookbook"><strong>New Araivals</strong></a>  
         </div>
     </div>
-</div>
-<div id="banner2" class="text-center py-2">
+<div id="banner2" class="text-center py-2 Featured">
     <div class="container">
         <div class="row">
             <div class="col-lg-12  wow flipInX">
                 <div class="section-title">
                     <h2>Featured Product</h2>
+                    
                 </div>
                 
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
                 <div class="owl-carousel product-slider wow slideInLeft">
                     <div class="land-product">
                         <div class="land-pro-img">
@@ -164,7 +166,7 @@
         </div>
     </div>    
 </div>
-<div id="banner2" class="text-center py-2">
+<div id="banner2" class="text-center py-2 Trending">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -282,6 +284,7 @@
         </div>
     </div>    
 </div>
+
 {% endblock content %}
 
 {% block css %}
