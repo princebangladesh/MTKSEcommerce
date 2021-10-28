@@ -4,7 +4,7 @@ $(document).ready(function(){
         e.preventDefault();
         
         $("i",this).toggleClass("fa-plus fa-minus")
-        $(".footerHover div").not(this).find("i").removeClass("fa-minus").addClass("fa-plus")
+        $(".footerHover div").not(this).find("span i").removeClass("fa-minus").addClass("fa-plus")
 
         var $div = $(this).next('.footerContent');
         $(".footerContent").not($div).slideUp(800)
