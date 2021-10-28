@@ -20,8 +20,7 @@ $(".navbar-nav").click(function(){
 
 
 $('.nav-link').click(function() {
-  $('.nav-link').removeClass('active');
-  $(this).addClass('active');
+  $('.nav-link').toggleClass('active');
 })
 
 var textWrapper = document.querySelector('.navbar-brand .letters');

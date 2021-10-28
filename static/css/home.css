@@ -53,7 +53,7 @@ body {
     font-weight: bold;
     color: white;
     top: 52%;
-    font-size: 30px;
+    font-size: calc(25px + 1vh);
     left: 0;
     opacity: 0;
     transition: 0.4s ease;
@@ -99,7 +99,7 @@ body {
 } */
 .section-title{
   font-family: Dosis, sans-serif;
-  font-size: 32px;
+  font-size: 10%;
   font-weight: 700;
   color:#000000;
   margin-bottom: 2rem;
@@ -107,7 +107,7 @@ body {
 
 }
 .Featured:hover .section-title, .Trending:hover .section-title{
-  letter-spacing: 5px;
+  letter-spacing:2%;
   word-spacing: 8px;
   color: #16141f;
   
