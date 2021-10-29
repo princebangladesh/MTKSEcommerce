@@ -78,13 +78,13 @@
       font-weight: 600;
 }
 .nav-item:hover{
-      background-color: rgb(32, 33, 36);
-      transition: all 1s ease-in-out;
+      background-color: rgb(4, 5, 10);
+      transition: all 1.2s ease-in-out;
 
 }
 .nav-item:hover .nav-link{
-      color:cyan!important;
-      margin-left: 1rem;
+      color:rgb(121, 248, 248)!important;
+      letter-spacing: 1px;
       transition: all 0.5s ease-in-out;
 }
 .nav-link:focus-visible{
@@ -124,7 +124,7 @@
 .navbar i:hover{
       color:#1bb9b4
 }
-@media(min-width:992px){
+@media(min-width:991px){
       
       .nav-item:hover{
             box-shadow: 1px salmon;
