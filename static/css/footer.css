@@ -38,11 +38,17 @@
 .footerContent ul li a {
     text-decoration: none;
     color: white;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s;
 }
 .footerContent ul li a:hover{
     letter-spacing: 1px;
     color: cyan;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.footerContent .footerSI ul li a:hover{
+    border-bottom:none;
+    color: rgb(220, 255, 255);
+
 }
 .footerSI ul{
     display: flex;
