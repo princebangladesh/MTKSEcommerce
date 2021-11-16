@@ -71,3 +71,21 @@
     top: 0;
     opacity: 1;
 }
+
+
+@media(max-width:991px){
+  #banner1  a::before{
+    visibility: hidden;
+  }
+  #banner1 a::after {
+    visibility: hidden;
+  }
+  #banner1 .banner1box strong{
+    top: 0;
+    opacity: 1;
+  }
+  #banner1 a img{
+    filter: brightness(70%);
+  }
+  
+}

@@ -34,29 +34,13 @@
       height: 1px;
       animation: color-change 2s linear infinite;
     }
-    .Featured:hover .section-title, .Trending:hover .section-title{
+    .Trending:hover .section-title{
       letter-spacing:2px;
       word-spacing: 5px;
       color: #16141f;
       
     }
-    @keyframes color-change {
-      0%,100%{ 
-        border-color:rgb(0, 23, 37);
-      }
-    
-      25%{
-        border-color:#8b4513;
-      }
-      
-      50%{
-        border-color:#0091EA;
-      }
-      
-      75%{
-        border-color:#9400d3;
-      }
-    }
+
     
     
     #banner3 .container{
@@ -214,19 +198,7 @@
     .land-product:hover .product-flow , .land-product:hover h3{
       width: auto;
     }
-    @keyframes scroll {
-      0% {
-        left: 0;
-      }
-      75% {
-        transform: translateX(-100%);
-      }
-      90%,
-      100% {
-        left: 0;
-        transform: unset;
-      }
-    }
+    
     .product-detail .product-rate{
       float:right;
       margin-right: 2px;
@@ -237,3 +209,54 @@
           font-weight: 900;
       line-height: 1.4em;
     }
+
+
+
+/* Animation keyframes */
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  90%,
+  100% {
+    left: 0;
+    transform: unset;
+  }
+}
+
+@keyframes color-change {
+  0%,100%{ 
+    border-color:rgb(0, 23, 37);
+  }
+
+  25%{
+    border-color:#8b4513;
+  }
+  
+  50%{
+    border-color:#0091EA;
+  }
+  
+  75%{
+    border-color:#9400d3;
+  }
+}
+/* end animation */    
+
+    
+
+@media(max-width:991px){
+  #banner3 .section-title .leftline, #banner3 .section-title .rightline{
+    visibility: hidden;
+  }
+  #banner3 .owl-carousel .owl-item ul li{
+    visibility: hidden;
+  }
+  .Trending:hover .section-title{
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+}
