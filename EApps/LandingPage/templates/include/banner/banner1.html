@@ -1,22 +1,23 @@
 {% load static %}
-<div class="row" id="banner1">
-      <div class="col-md-6 mb-4">
-            <div class="row">
-                  <div class="col-12 mt-md-0 mt-4 banner1box"> 
-                  <a href="#"><img src="{% static 'img/electronics.png' %}" class="banner1pic" alt="nowTrending"><strong>Electronics</strong></a> 
-                  </div>
-                  <div class="col-6 mt-4 banner1box"> 
-                  <a href="#"><img src="{% static 'img/sports.jpg' %}" class="banner1pic" alt="campaigns"><strong>Sports Kits</strong></a> 
-                  </div>
-                  <div class="col-6 mt-4 banner1box"> 
-                  <a href="#"><img src="{% static 'img/gadgets2.jpg' %}" class="banner1pic" alt="lookbook"><strong>Gadgets</strong></a> 
+<div class="container-fluid">
+      <div class="row" id="banner1">
+            <div class="col-md-6 mb-4 bannercolumn">
+                  <div class="row">
+                        <div class="col-12 mt-md-0 mt-4 banner1box"> 
+                        <a href="#"><img src="{% static 'img/electronics.png' %}" class="banner1pic" alt="nowTrending"><strong>Electronics</strong></a> 
+                        </div>
+                        <div class="col-6 mt-4 banner1box"> 
+                        <a href="#"><img src="{% static 'img/sports.jpg' %}" class="banner1pic" alt="campaigns"><strong>Sports Kits</strong></a> 
+                        </div>
+                        <div class="col-6 mt-4 banner1box"> 
+                        <a href="#"><img src="{% static 'img/gadgets2.jpg' %}" class="banner1pic" alt="lookbook"><strong>Gadgets</strong></a> 
+                        </div>
                   </div>
             </div>
-      </div>
-      <div class="col-md-6 mb-4 banner1box"> 
-            <a href="#"><img src="{% static 'img/newarrival.jpg' %}" class="banner1pic" alt="lookbook"><strong>New Araivals</strong></a>  
+            <div class="col-md-6 mb-4 banner1box bannercolumn"> 
+                  <a href="#"><img src="{% static 'img/newarrival.jpg' %}" style="max-height:418px" alt="lookbook"><strong>New Araivals</strong></a>  
+            </div>
       </div>
 </div>
-
 
 <link rel="stylesheet" href="{% static 'css/banner/banner1.css' %}" type="text/css">

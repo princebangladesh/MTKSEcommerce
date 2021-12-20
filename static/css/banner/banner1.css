@@ -11,16 +11,19 @@
       width: 100%;
       max-width: 100%;
       border: none;
+      text-align: center;
     }
-  #banner1 a::before {
+#banner1 a .banner1pic{
+    max-height: 200px;
+  }
+#banner1 a::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      margin-left: 15px;
-      margin-right: 15px;
+      margin: 0 15px;
       background: rgba(0, 0, 0, 0.6);
       opacity: 0;
       transition: all 0.4s ease-in;

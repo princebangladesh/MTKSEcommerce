@@ -9,19 +9,22 @@ const closesidenav = () =>navigate.classList.remove("active")
 $("body").on("swiped-left",closesidenav)
 
 $(".navbar-toggler").click(function(){
-  $(".main-navigation").addClass("active")
+  $(".main-navigation").toggleClass("active")
+  $(".humberger-menu").toggleClass("open")
 })
 $(".overlay").click(function(){
   $(".main-navigation").removeClass("active")
+  $(".humberger-menu").removeClass("open")
+
 })
-$(".navbar-nav").click(function(){
-  $(".main-navigation").removeClass("active")
-})
+// $(".navbar-nav").click(function(){
+//   $(".main-navigation").removeClass("active")
+//   $(".humberger-menu").removeClass("open")
+
+// })
 
 
-$('.nav-link').click(function() {
-  $('.nav-link').toggleClass('active');
-})
+
 
 var textWrapper = document.querySelector('.navbar-brand .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>");
