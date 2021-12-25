@@ -4,21 +4,26 @@ $(document).ready(function(){
       $(".footerHover .borderTB").click(function(e) {
         e.preventDefault();
         
-        $("i",this).toggleClass("fa-plus fa-minus")
-        $(".footerHover .borderTB").not(this).find(".iconplus i").removeClass("fa-minus").addClass("fa-plus")
-
         var $div = $(this).next('.footerContent');
+        var $div2 = $(this).next('.plusminus');
         $(".footerContent").not($div).slideUp(800)
+        $(".plusminus").not($div2).removeClass("active")
+        
           if ($div.is(":visible")) {
               $div.slideUp(500)
+              $(".plusminus",this).removeClass("active")
+
           }  
           else {
              $div.slideDown(800)
+             $(".plusminus",this).addClass("active")
+
           }
       });
     }
     else{
-      $(".footerHover div").slideDown()
+      $(".footerContent").slideDown()
+
     }
     
   }
@@ -30,24 +35,24 @@ $(document).ready(function(){
     if($(window).width() < 991 ){
       $(".footerHover .borderTB").click(function(e) {
         e.preventDefault();
-        
-        $(".footerHover .borderTB").not(this).find(".iconplus i").removeClass("fa-minus").addClass("fa-plus")
 
         var $div = $(this).next('.footerContent');
-        $(".footerContent").not($div).slideUp(800)
           if ($div.is.not(":visible")) {
               $div.slideDown(800)
-              // $("i",this).toggleClass("fa-plus fa-minus")
+             $(".plusminus",this).addClass("active")
           }
           else{
             $div.slideUp(500)
+            $(".plusminus",this).removeClass("active")
+
 
           }
 
       });
     }
     else{
-      $(".footerHover div").slideDown()
+      $(".footerContent").slideDown()
+
     }
   })
   
