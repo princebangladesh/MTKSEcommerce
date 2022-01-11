@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Bungee+Outline&family=Pattaya&family=Sigmar+One&display=swap');
+.letters{
+      display: inline-block;
+      line-height: 1rem;
+      transform-origin: 0 0;
+      font-weight: 1000;
+      letter-spacing: 2px;
+      font-family: 'Averia Libre', cursive;
+      }
+
+.letters:nth-child(1){
+      color: cyan;
+      }
+
+.letters:nth-child(2){
+      color: blanchedalmond;
+      }
+
+.letters:nth-child(3){
+      color: lime;
+      }
+
+.letters:nth-child(4){
+      color: aquamarine;
+      }
+
+
+
+.overlay{
+      margin-top: 3.5rem;
+      left: 0;
+      width: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      visibility: hidden;
+}
+.navbar .bx{
+      color:papayawhip;
+      cursor: pointer;
+      height: 1.5rem;
+      font-size: 25px;
+      position: relative; 
+}
+
+.sidebar{
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      flex-direction: row;
+      transition: none;
+      overflow-y: hidden;
+      max-width: 100%;
+      background-color: transparent;
+}
+
+
+.navbar{
+      background-color: #0a1c24;
+      font-family: cursive;
+
+
+}
+
+.nav-link{
+      color:papayawhip!important;
+      font-weight: 600;
+      transition: all 0.5s ease-in-out;
+      
+
+}
+
+.nav-item:hover .nav-link{
+      color:rgb(121, 248, 248)!important;
+}
+.nav-link:focus-visible{
+      outline: none;
+}
+
+
+.main-navigation.active .sidebar{
+      left: 0;
+}
+.main-navigation.active .overlay{
+      visibility: visible;
+}
+.nav-item:hover .sideicon{
+      color: cyan;
+      transition: all 0.5s ease-in-out;
+      animation: Spin .4s;
+}
+.front-icon .bx:hover{
+      color:#4cf8f2;
+      transition: all 0.5s ease-in-out;
+      animation: Shake .4s;
+}
+.navbar i{
+      font-size: 24px;
+      color: papayawhip;
+      margin-bottom: 2px;
+      transition: 0.3s ease-in-out;
+}
+.navbar i:hover{
+      color:#1bb9b4
+}
+.navbar-toggler:focus{
+      outline: none;
+}
+
+.pointer{
+      cursor: pointer;
+}
+.badge{
+      position: absolute;
+      top: 0;
+      right: -10px;      
+      display:inline-block;
+      min-width:8px;
+      padding:3px 7px;
+      font-size:10px;
+      font-weight:900;
+      line-height:1;
+      color:#fff;
+      text-align:center;
+      white-space:nowrap;
+      vertical-align:baseline;
+      background-color: rgb(231, 69, 96);
+      border-radius:10px;     
+}
+/* Humberger Menu */
+.humberger-menu{
+      width: 30px;
+      height: 20px;
+      position: relative;
+      margin: 0px;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+}
+.humberger-menu span{
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      background: papayawhip;
+      transition: .25s ease-in-out;
+}
+.humberger-menu span:nth-child(1) {
+      top: 0px;
+      }
+      
+.humberger-menu span:nth-child(2), .humberger-menu span:nth-child(3) {
+      top: 10px;
+      }
+      
+.humberger-menu span:nth-child(4) {
+      top: 20px;
+      }
+.humberger-menu.open span:nth-child(1) {
+      top: 11px;
+      width: 0%;
+      left: 50%;
+      }
+      
+.humberger-menu.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      }
+      
+.humberger-menu.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      }
+      
+.humberger-menu.open span:nth-child(4) {
+      top: 11px;
+      width: 0%;
+      left: 50%;
+      }
+
+/* end Humberger Menu */
+@media(max-width:992px){
+
+      .sidebar{
+            left: -100%;
+            max-width: 300px;
+            transition: all 0.8s ease;
+            top: 0%;
+            bottom: 0%;
+            background-color: #0a1c24;
+            
+      }
+      
+      .sidebar, .overlay{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+      }
+      .nav-link{
+            opacity: 0;
+      }
+      .main-navigation.active .nav-link{
+            animation: SlideUP .5s ease forwards var(--i);
+      }
+
+}
+
+/* animation keyframe */
+@keyframes SlideUP{
+      from{
+            opacity: 0;
+            transform: translateY(15px);
+            }
+      to{
+            opacity: 1;
+            transform: translateY(0px);
+            }
+}
+@keyframes Shake {
+      10%, 90% {transform: translate3d(-1px, 0, 0);}
+      
+      20%, 80% {transform: translate3d(2px, 0, 0);}
+    
+      30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+    
+      40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+
+@keyframes Spin {
+      0%{transform: rotate(0deg);}
+      
+      100%{transform: rotate(-360deg)}
+}
+/* end keyframe */
+
+/* extra animation */
+/* 
+.gradian-border{
+      --border-width: 3px;
+      margin-right: 1rem;
+      padding: 2px 5px;
+      line-height: inherit;
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      color: rgba(0,0,0,.9);
+      background: #1b8888;
+      border-radius: var(--border-width);
+      cursor: pointer;
+      
+    }
+    
+.gradian-border::after{
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -2;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+            90deg,
+                  hsl(224, 83%, 33%),
+                  hsl(269, 82%, 24%),
+                  hsl(314, 87%, 55%),
+                  hsl(359, 78%, 52%),
+                  hsl(44, 76%, 53%),
+                  hsl(66, 89%, 46%),
+                  hsl(133, 76%, 41%),
+                  hsl(179, 69%, 17%)
+            );
+
+      background-size: 300% 300%;
+      background-position: 0 100%;
+      border-radius: calc(2 * var(--border-width));
+      animation: gradianMove 2s alternate infinite;
+      }
+@keyframes gradianMove {
+      50% {background-position: 75% 50%;}
+      } */
+
+/* end animation */

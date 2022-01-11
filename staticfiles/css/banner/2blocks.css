@@ -1,0 +1,51 @@
+.doubleblock{
+      overflow: hidden;
+}
+.single-block{
+      margin-top: 1.5rem;
+      position: relative;
+}
+.single-block img{
+      max-height: 300px;
+      width: 100%;
+      filter: brightness(50%);
+}
+.content{
+      position: absolute;
+      padding-left: 10%;
+      left:0;
+      top:50%;
+      transform: translateY(-50%);
+}
+.content p{
+      animation-name: bounce;
+      animation-delay: 5s;
+      animation-duration: 5s;
+      animation-iteration-count: 5;
+      font-size: 13px;
+      color: rgb(174, 235, 232);
+      font-weight: 500;
+      margin-bottom: 5px;
+      
+}
+.content h3{
+      color: rgb(243, 243, 243);
+      text-transform: uppercase;
+      font-weight: 900;
+}
+.content a{
+      padding:8px 25px;
+      display: inline-block;
+      font-weight: 700;
+      text-align: center;
+      color: #0a1c24;
+      background: papayawhip;
+      border-radius: 30px;
+      margin-bottom: 0;
+      transition: 0.3s ease;
+      text-decoration: none;
+}
+.content a:hover{
+      background: #0a1c24;
+      color: papayawhip;
+}

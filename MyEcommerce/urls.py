@@ -22,10 +22,3 @@ urlpatterns = [
     path('',include('EApps.LandingPage.urls'))
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
-from django.contrib.staticfiles.views import serve
-from django.views.decorators.cache import cache_control
-
-# YOUR urlpatterns here... 
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, view=cache_control(no_cache=True, must_revalidate=True)(serve))

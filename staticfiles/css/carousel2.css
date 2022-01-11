@@ -1,0 +1,21 @@
+#caro-img{
+  margin: auto;
+  height: 300px; 
+  filter: brightness(60%) !important;
+}
+.swiper-slide{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media(max-width:991px){
+  #caro-img{
+    max-height: 200px!important;
+  }
+
+}

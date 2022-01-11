@@ -1,0 +1,94 @@
+#banner1 a{
+      display: block;
+      overflow: hidden;      
+  }
+
+  #banner1 a img{
+      transition: 0.3s ease-in-out;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      text-align: center;
+    }
+#banner1 a .banner1pic{
+    max-height: 200px;
+  }
+#banner1 a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 15px;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: all 0.4s ease-in;
+    }
+  
+  #banner1 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid white;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+
+#banner1  strong{
+    position: absolute;
+    font-family: Dosis, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    top: 52%;
+    font-size: calc(25px + 1vh);
+    left: 0;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+.banner1box{
+  overflow: hidden ;
+}
+
+
+@media (hover: hover) {
+  #banner1 .banner1box :hover strong{
+    top: 0;
+    opacity: 1;
+  }
+  #banner1  a:hover::after{
+    transform: scale(0.75);
+    opacity: 1;
+  }
+  #banner1  a:hover::before{
+    opacity: 1;
+  }
+  
+}
+@media(max-width:991px){
+  
+  #banner1 .banner1box strong{
+    top: 0;
+    opacity: 1;
+  }
+  #banner1 a img{
+    filter: brightness(70%);
+  }
+  
+}

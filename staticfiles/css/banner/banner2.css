@@ -1,0 +1,14 @@
+.product-pic{
+      height: 600px;
+      margin: 0 -15px;
+      text-align: center;
+      
+}
+.product-pic-box{
+      overflow: hidden;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      max-height: 500px;
+}
+

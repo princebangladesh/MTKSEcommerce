@@ -1,0 +1,52 @@
+/* ==========FAQs start========== */
+.mainFAQ{
+      position: relative;
+  }
+  
+  .mainFAQ::before {
+      content: "";
+      position: absolute;
+      left: -33px;
+      top: 5px;
+      width: 1px;
+      background: rgb(2, 9, 43);
+      height: 100%;
+  }
+  
+  .question{
+      position: relative;
+      background: rgba(246, 246, 246, 1);
+      color: #000;
+      text-align: left;
+      cursor:pointer;
+      font-weight: 500;
+      box-shadow: 0 2px 2px #2323236b;
+      padding: 10px 20px;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in;
+  }
+  .question:hover{
+      box-shadow: 0 4px 14px #232323cc;
+  }
+  .question::before {
+        content: attr(data-counter);
+        position: absolute;
+        left: -50px;
+        top: 0;
+        height: 35px;
+        width: 35px;
+        background: #f9fafb;
+        border: 2px solid rgb(9,33,110);
+        border-radius: 50%;
+        line-height: 30px;
+        text-align: center;
+  }
+  .answer {
+      display: none;
+      background: #7474743b;
+      padding: 20px 40px;
+      color: #4d4d4d;
+      border-left: 3px solid rgb(18, 75, 35);; 
+  }
+  /* ========== FAQs end========== */
+  

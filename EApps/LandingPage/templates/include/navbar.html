@@ -2,16 +2,15 @@
 <nav class="navbar navbar-expand-lg navbar-light main-navigation sticky-top">
   <div class="container-fluid">
   
-  <a class="navbar-brand" href="#myPage">
-  <span class="letters">MTKS</span>
-  </a>
-  <div class="ml-auto align-middle mr-3 order-lg-last pr-3 front-icon">
-  <i class='bx bx-heart pr-2'></i>
-  <i class="bx bx-user pr-2">
-  </i>
-  <i class='bx bx-shopping-bag'>
-  <span class="badge">1</span>
-  </i>
+    <a class="navbar-brand" href="#myPage">
+      <span class="letters">MTKS</span>
+    </a>
+    <div class="ml-auto align-middle mr-3 order-lg-last pr-3 front-icon">
+      <i class='bx bx-heart pr-2'></i>
+      <i class="bx bx-user pr-2"></i>
+      <i class='bx bx-shopping-bag'>
+        <span class="badge">1</span>
+      </i>
   </div>
   <button class="navbar-toggler" type="button">
     <div class="humberger-menu">
@@ -23,11 +22,86 @@
   <div class="order-lg-2 mr-auto d-lg-flex w-75 pb-3 pb-lg-0 sidebar" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link px-3" style="--i: .3s" href="#">Home</a>
+        <a class="nav-link px-3" href="#">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link px-3" style="--i: .5s" href="#banner">Shop</a>
+      <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase">Shop</a>
+        <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0">
+            <div class="row text-light rounded-0 m-0 shadow-sm">
+              <div class="col-12">
+                <div class="p-4">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3 mb-4">
+                      <h6 class="font-weight-bold text-uppercase"><a class="nav-link">MEN</a></h6>
+                      <ul class="list-unstyled">
+                        <li class="nav-item"><a href="#" class="nav-link text-small pb-0">Unique Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-4">
+                      <h6 class="font-weight-bold text-uppercase"><a class="nav-link">WOMEN</a></h6>
+                      <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-4">
+                      <h6 class="font-weight-bold text-uppercase"><a class="nav-link">KIDs</a></h6>
+                      <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-4">
+                      <h6 class="font-weight-bold text-uppercase"><a class="nav-link">More</a></h6>
+                      <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
+      <li class="nav-item dropdown push-menu">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shop
+        </a>
+        <label for="shop" class="dropdown-label nav-link px-3">Shop<i class='bx bxs-chevron-right'></i></label>
+        <input type="checkbox" id="shop" name="shop" class="menu-checkbox">
+        <div class="menu">
+         <label class="menu-toggle" for="shop"><span>Back</span><i class='bx bxs-chevron-left'></i></label>
+         <ul class="dropdown-menu" aria-labelledby="shop">
+          <li class="nav-item"><a class="dropdown-item nav-link px-3" href="#">MEN</a></li>
+          <li class="nav-item"><a class="dropdown-item nav-link px-3" href="#">Women</a></li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Kids
+              </a>
+        <label for="kids" class="dropdown-label nav-link px-3">Kids<i class='bx bxs-chevron-right'></i></label>
+        <input type="checkbox" id="kids" name="kids" class="menu-checkbox">
+        <div class="menu">
+         <label class="menu-toggle" for="kids"><span>Back</span><i class='bx bxs-chevron-left'></i></label>
+         <ul class="dropdown-menu" aria-labelledby="kids">
+          <li class="nav-item"><a class="dropdown-item nav-link px-3" href="#">Boy</a></li>
+          <li class="nav-item"><a class="dropdown-item nav-link px-3" href="#">Girl</a></li>
+          <li class="nav-item"><a class="dropdown-item nav-link px-3" href="#">Acessories</a></li>
+         </ul>
+        </div>
+       </li>
+         </ul>
+        </div>
+       </li>
+       
       <li class="nav-item">
         <a class="nav-link px-3" style="--i: .7s" href="#about">Blog</i></a>
       </li>
@@ -40,6 +114,7 @@
     </ul>
   </div>
   </div>
+
 </nav>
 <link rel="stylesheet" href="{% static 'css/navbar.css' %}" type="text/css">
 <script src="{% static 'js/navbar.js' %}"></script> 

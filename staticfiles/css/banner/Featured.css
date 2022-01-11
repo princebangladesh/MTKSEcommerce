@@ -1,0 +1,251 @@
+.section-title {
+      font-family: Dosis, sans-serif;
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+      font-size: 10%;
+      font-weight: 700;
+      color:#000000;
+      transition: 0.3s ease-in;
+      
+    
+    }
+    .section-title span h2{
+      text-align: center;
+    }
+    .section-title .leftline{
+      align-items: center;
+      margin-right: 1.5rem !important; ;
+      flex: 1 1 auto;
+      border-top: 4px dotted rgb(0, 23, 37);
+      height: 1px;
+      animation: color-change 2s linear infinite;
+      animation-direction: reverse;
+    
+    
+    }
+    .section-title .rightline{
+      align-items: center;
+      margin-left: 1.5rem !important; ;
+      flex: 1 1 auto;
+      border-top: 4px dotted rgb(0, 23, 37);
+      height: 1px;
+      animation: color-change 2s linear infinite;
+    }
+    
+    
+    
+    
+    #banner2 .container{
+      padding: 30px;
+      box-shadow: 2px 0px 15px #0000001a;
+      overflow: hidden;
+    }
+    
+    
+    #banner2 .owl-carousel .owl-item .land-pro-img{
+        
+        height: auto;
+        max-width: 100%;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    
+    #banner2 .owl-carousel .owl-item ul{
+      width: 100%;
+      position: absolute;
+      left: 0;
+      z-index: 9;
+      height: 30px;
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      bottom: 20px;
+      
+    }
+    #banner2 .owl-carousel .owl-item ul li{
+      list-style: none;
+      display: inline-block;
+      margin-right: 10px;
+      transition: all 0.3s ease-in-out;
+      transform: scale(0,0);
+    }
+    
+    
+    #banner2 .owl-carousel .owl-item ul li a{
+      font-size: 22px;
+      color:#020229;
+      height:40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: #FFFAFA;
+      display: block;
+      border-radius: 50%;
+      transition: 0.4s ease-in;
+      z-index: 1;
+      overflow: hidden;
+      
+    }
+    
+    #banner2 .owl-carousel .owl-item ul li a::before{
+      content: "";
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #050144;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 0.4s ease-out;
+      transform: scale(0,0);
+      z-index: -1;
+    }
+    
+    
+    
+    #banner2 .owl-carousel .owl-nav{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      margin-top: -20px;
+    }
+    #banner2 .owl-carousel .owl-nav button{
+      height: 60px;
+          width: 40px;
+          line-height: 60px;
+          text-align: center;
+          color: rgb(1, 10, 15);
+          font-size: 20px;
+          position: absolute;
+          margin: 0;
+          transition: all 0.2s ease;
+          padding: 0;
+          border-radius: 5px;
+      outline: none;
+    }
+    
+    #banner2 .owl-carousel .owl-nav .owl-prev{
+          left:0;
+    }
+    #banner2 .owl-carousel .owl-nav .owl-next{
+          right:0;
+    }
+    .product-detail{
+      margin-top: 22px;
+      margin-bottom: 0;
+    }
+    .product-detail h3{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.4em;
+      font-family: Dosis, sans-serif;
+      float: left;
+      margin-left: 1.2rem;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;   
+      text-overflow: ellipsis;
+      display: block;
+      width: 50%;
+    }
+    .product-head{
+      width:80%;
+      position: absolute;
+      overflow: hidden;
+      
+    }
+    .land-product{
+      margin: 10px 15px 0 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    
+    
+    .product-detail .product-rate{
+      float:right;
+      margin-right: 2px;
+      
+    }
+    .product-detail .product-rate .present{
+      font-size: 16px;
+          font-weight: 900;
+      line-height: 1.4em;
+    }
+
+/* Animation keyframes */
+@keyframes scroll {
+      0% {
+        left: 0;
+      }
+      75% {
+        transform: translateX(-100%);
+      }
+      90%,
+      100% {
+        left: 0;
+        transform: unset;
+      }
+    }
+
+@keyframes color-change {
+      0%,100%{ 
+        border-color:rgb(0, 23, 37);
+      }
+    
+      25%{
+        border-color:#8b4513;
+      }
+      
+      50%{
+        border-color:#0091EA;
+      }
+      
+      75%{
+        border-color:#9400d3;
+      }
+    }
+/* end animation */
+
+@media (hover: hover) {
+  
+
+  #banner2 .owl-carousel .owl-item:hover{
+    border:1px solid #1614141a;
+  
+  }
+  #banner2 .owl-carousel .owl-item:hover ul li{
+    transform: scale(1,1);
+  
+  }
+  #banner2 .owl-carousel .owl-item ul li:hover a{
+    color: #ebe0b1;
+    transform: rotate(360deg);
+  
+  }
+  #banner2 .owl-carousel .owl-item:hover .land-pro-img{
+    transform: scale(1.1);
+  }
+  #banner2 .owl-carousel .owl-item ul li a:hover::before{
+    transform: scale(1,1);
+  }
+  #banner2 .owl-carousel .owl-nav button:hover{
+    color:rgb(10, 53, 119);
+  }
+  .land-product:hover .product-flow , .land-product:hover h3{
+    width: auto;
+  }
+  .land-product:hover .product-flow h3{
+    animation: scroll 7s infinite;
+    animation-delay: 1.5s;
+    
+  }
+}
