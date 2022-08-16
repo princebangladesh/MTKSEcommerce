@@ -37,15 +37,14 @@
     
     
     
-    
-    #banner2 .container{
+    #banner4 .container-fluid{
       padding: 30px;
       box-shadow: 2px 0px 15px #0000001a;
       overflow: hidden;
     }
     
     
-    #banner2 .owl-carousel .owl-item .land-pro-img{
+    #banner4 .owl-carousel .owl-item .land-pro-img{
         
         height: auto;
         max-width: 100%;
@@ -54,7 +53,7 @@
     }
     
     
-    #banner2 .owl-carousel .owl-item ul{
+    #banner4 .owl-carousel .owl-item ul{
       width: 100%;
       position: absolute;
       left: 0;
@@ -67,7 +66,7 @@
       bottom: 20px;
       
     }
-    #banner2 .owl-carousel .owl-item ul li{
+    #banner4 .owl-carousel .owl-item ul li{
       list-style: none;
       display: inline-block;
       margin-right: 10px;
@@ -76,7 +75,7 @@
     }
     
     
-    #banner2 .owl-carousel .owl-item ul li a{
+    #banner4 .owl-carousel .owl-item ul li a{
       font-size: 22px;
       color:#020229;
       height:40px;
@@ -92,7 +91,7 @@
       
     }
     
-    #banner2 .owl-carousel .owl-item ul li a::before{
+    #banner4 .owl-carousel .owl-item ul li a::before{
       content: "";
       position:absolute;
       width: 100%;
@@ -110,15 +109,15 @@
     
     
     
-    #banner2 .owl-carousel .owl-nav{
+    #banner4 .owl-carousel .owl-nav{
       margin: 0;
       position: absolute;
       top: 50%;
       width: 100%;
       margin-top: -20px;
     }
-    #banner2 .owl-carousel .owl-nav button{
-      height: 60px;
+    #banner4 .owl-carousel .owl-nav button{
+          height: 70px;
           width: 40px;
           line-height: 60px;
           text-align: center;
@@ -132,10 +131,10 @@
       outline: none;
     }
     
-    #banner2 .owl-carousel .owl-nav .owl-prev{
+    #banner4 .owl-carousel .owl-nav .owl-prev{
           left:0;
     }
-    #banner2 .owl-carousel .owl-nav .owl-next{
+    #banner4 .owl-carousel .owl-nav .owl-next{
           right:0;
     }
     .product-detail{
@@ -218,26 +217,26 @@
 @media (hover: hover) {
   
 
-  #banner2 .owl-carousel .owl-item:hover{
+  #banner4 .owl-carousel .owl-item:hover{
     border:1px solid #1614141a;
   
   }
-  #banner2 .owl-carousel .owl-item:hover ul li{
+  #banner4 .owl-carousel .owl-item:hover ul li{
     transform: scale(1,1);
   
   }
-  #banner2 .owl-carousel .owl-item ul li:hover a{
+  #banner4 .owl-carousel .owl-item ul li:hover a{
     color: #ebe0b1;
     transform: rotate(360deg);
   
   }
-  #banner2 .owl-carousel .owl-item:hover .land-pro-img{
+  #banner4 .owl-carousel .owl-item:hover .land-pro-img{
     transform: scale(1.1);
   }
-  #banner2 .owl-carousel .owl-item ul li a:hover::before{
+  #banner4 .owl-carousel .owl-item ul li a:hover::before{
     transform: scale(1,1);
   }
-  #banner2 .owl-carousel .owl-nav button:hover{
+  #banner4 .owl-carousel .owl-nav button:hover{
     color:rgb(10, 53, 119);
   }
   .land-product:hover .product-flow , .land-product:hover h3{

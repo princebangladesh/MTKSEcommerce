@@ -1,0 +1,22 @@
+/* ==========cowndown start========== */
+.container{
+      box-shadow: 2px 0px 15px #0000001a;
+  }
+  
+  .main-cownDown{
+      color:papayawhip;
+      width: 100%;
+      background-size: cover;
+  }
+  #TDate{
+      visibility: hidden;
+      z-index: -999;
+  }
+  .main-cownDown .shadow{
+      width: 100px;
+      height: 80px;
+      border-radius: 10px;
+      /* background: #f5f5dc80; */
+  }
+  /* ==========cowndown end========== */
+  

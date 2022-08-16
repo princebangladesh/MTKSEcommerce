@@ -1,25 +1,37 @@
-$(".product-slider").owlCarousel({
-      loop: true,
-      margin: 25,
-      nav: true,
-      items: 4,
-      dots: true,
-      navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
-      smartSpeed: 1200,
-      autoHeight: false,
-      autoplay: true,
-      responsive: {
-          0: {
-              items: 1,
-          },
-          576: {
-              items: 2,
-          },
-          992: {
-              items: 2,
-          },
-          1200: {
-              items: 3,
-          }
+$('.banner2-slider').owlCarousel({
+      items:1,
+      autoplay:true,
+      margin:10,
+      autoplayTimeout:5000,
+      smartSpeed: 400,
+      autoplayHoverPause:true,
+      loop:true,
+      nav:true,
+      merge:true,
+      dots:false,
+      navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
+      responsive:{
+        0: {
+          items:2,
+        },
+        300: {
+          items:2,
+        },
+        480: {
+          items:2,
+        },
+        1024: {
+          items:2,
+        },
+        1250: {
+          items:3,
+        },
+        
+        1600: {
+          items:4,
+        },
+        1900: {
+          items:5,
+        },
       }
-  });
+    });

@@ -24,6 +24,7 @@ color=(
 # class Proudct(models.Model):
 #       name=models.CharField(max_length=30)
 #       description=models.TextField(max_length=3000)
+#       comment=models.CharField(max_length=100)
 #       display=models.BooleanField(default=True)
 #       code=models.CharField(max_length=10)
 #       order_qunatity=models.IntegerField(default=1)
@@ -34,4 +35,5 @@ color=(
 #       added_by=models.ForeignKey(User,on_delete=models.CASCADE)
 #       main_image=models.ImageField()
 #       badge=models.CharField(max_length=15,blank=True)
-#       highlights=models.CharField(max_length=20,blank=True)
+      # highlights=models.CharField(max_length=20,blank=True)
+      # rating=models.Intergerfield(default=0)

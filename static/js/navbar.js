@@ -11,6 +11,8 @@ $("body").on("swiped-left",closesidenav)
 $(".navbar-toggler").click(function(){
   $(".main-navigation").toggleClass("active")
   $(".humberger-menu").toggleClass("open")
+  $( ".menu-checkbox" ).prop( "checked", false );
+
 })
 $(".overlay").click(function(){
   $(".main-navigation").removeClass("active")

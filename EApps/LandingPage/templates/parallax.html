@@ -1,0 +1,28 @@
+{% load static %}
+<div class="pt-2 parallax">
+      <section class="parallax-image" data-speed="8" data-type="background" style="background-image: url({% static 'img/parallax.jpg' %});">
+            <div class="container-fluid">
+                  <div class="parallax-header wow filpInX">
+                    <h2>Subscribe With Email</h2>
+                    <p>Join us to get exciting offers in every week</p>
+                  </div>
+          
+                  <form method="post" action="#">
+                    {% csrf_token %}
+                    <div class="form-row justify-content-center">
+                      <div class="col-auto">
+                        <input type="text" class="form-control" placeholder="Enter your Email">
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+          
+            </div>
+      </section>
+</div>
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/parallax.css' %}">
+{% endblock css %}

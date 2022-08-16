@@ -1,0 +1,86 @@
+.parallax-image { 
+    position: relative;
+    height: 300px;
+    padding: 3% 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+     
+  }
+
+.parallax-header {
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+  }
+  
+.parallax-header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: rgb(154, 252, 26);
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+.parallax-header h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+.parallax-header p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+.parallax-header h2,
+.parallax p {
+    color: #fff;
+  }
+  
+.parallax input {
+    background:#fff;
+    color: #060c22;
+    border: 0;
+    outline: none;
+    margin: 0;
+    padding: 9px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  
+.parallax button {
+    font-weight: 700;
+    border: 0;
+    padding: 9px 25px;
+    cursor: pointer;
+    background: papayawhip;
+    color: #060c22;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 14px;
+    border-radius: 50px;
+  }
+  
+.parallax button:hover {
+    color: papayawhip;
+    background: #0a1c24;
+  }
+  
+@media only screen and (min-width: 768px) {
+
+    .parallax input {
+       min-width: 400px;
+     }
+  
+  }

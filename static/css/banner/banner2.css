@@ -1,3 +1,9 @@
+.box-header{
+    position: absolute;
+}
+.box-header h3{
+    bottom: 35%;
+}
 .product-pic{
       height: 600px;
       margin: 0 -15px;
@@ -12,3 +18,254 @@
       max-height: 500px;
 }
 
+#banner2 .owl-item .ribbon-box{
+    position: absolute;
+    display: inline-block;
+	background: none !important;
+    width: 65px;
+    height: 65px;
+	top:0;
+    text-align: center;
+	padding:0px;
+    transition: 0.5s;
+    font-weight: bold;
+    box-sizing: border-box;
+	overflow: hidden;
+}
+#banner2 .owl-item .ribbon-box-wrap{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+#banner2 .owl-item .ribbon-border{
+    width: 0;
+    height: 0;
+    border-left: 65px solid #1eb5ff;
+    border-bottom: 65px solid transparent;
+    z-index: 12;
+	position:relative;
+	top:-26px;
+}
+#banner2 .owl-item .ribbon-text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 10px;
+    position: absolute;
+    z-index: 14;
+    -webkit-transform: rotate(314deg);
+    -ms-transform: rotate(314deg);
+    transform: rotate(314deg);
+    top: 15px;
+    left: -23px;
+    width: 91px;
+    text-align: center;
+}
+
+#banner2 .owl-item .heart-icon{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: bisque;
+    transition: 0.5s;
+    
+}
+
+#banner2 .owl-item .heart-icon i:first-child{
+    position: absolute;
+    top:9px;
+    transform: scale(0,0);
+    opacity: 0;
+    transition: 0.25s;
+    cursor: pointer;
+}
+#banner2 .owl-item .heart-icon i:last-child{
+    transform: scale(0,0);
+    transition: 0.3s ease;
+}
+
+
+
+
+#banner2 .owl-item .product-card:hover .heart-icon i:first-child{
+    transform: scale(1,1);
+    opacity: 1;
+}
+#banner2 .owl-item .product-card:hover .heart-icon:hover i:first-child{
+    transform: scale(0,0);
+    opacity: 0;
+}
+
+#banner2 .owl-item .cart-btn{
+    color: papayawhip;
+    position: absolute;
+    font-size: 25px;
+    right: -10%;
+    bottom: 25%;
+    cursor: pointer;
+    transition: 0.35s ease-in;
+    opacity: 0;
+
+}
+
+#banner2 .owl-item .product-card:hover .cart-btn{
+    right: 8%;
+    opacity: 1;
+}
+
+
+#banner2 .owl-item .product-category a{
+    text-decoration: none;
+    color: #f9fcff;
+    transition: 0.3s ease;
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+.product-category a:hover{
+    color:  cyan;
+    letter-spacing: 1px;
+}
+.product-header{
+    text-decoration: none;
+    color: #f9fcff;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+.product-header:hover{
+    color: #d0e3f7;
+    letter-spacing: 0.5px;
+}
+.product-rate span{
+    max-width: 15px;
+    color: #bfc0be;
+}
+.product-rate span:last-child{
+    color: #e8f4e1;
+}
+.product-rate .checked{
+    color: orange
+}
+
+
+.product-pricing .current-price{
+    font-size: 20px;
+    color: #aaf1ff;
+    font-weight: 500;
+}
+.product-pricing .old-price{
+    font-size: 15px;
+    color: #adadad;
+    text-decoration: line-through;
+    margin: 0 0 0 6px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap');
+
+
+#banner2 .owl-item .product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 10px 15px 0 5px;
+    overflow: hidden;
+
+}
+
+#banner2 .owl-item .product-card {
+    position: relative;
+    min-width: 30px;
+    max-height: 420px;
+    background: #022f44;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+#banner2 .owl-item .product-card::before {
+    content: "";
+    position: absolute;
+    top: -70%;
+    width: 100%;
+    height: 100%;
+    background: #00111f;
+    transform: skewY(319deg);
+    transition: 0.5s;
+}
+
+#banner2 .owl-item .product-card:hover::before {
+    top: 70%;
+    transform: skewY(318deg);
+}
+#banner2 .owl-item .product-card:hover .ribbon-box{
+    top: -60px;
+    opacity: 0;
+
+}
+
+#banner2 .owl-item .product-card::after {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+}
+#banner2 .owl-item .card-img img{
+      max-height: 220px;
+}
+#banner2 .owl-item .product-card .card-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+    min-height: 270px;
+}
+
+#banner2 .owl-item .product-card .card-img img {
+    max-width: 90%;
+    transition: 0.5s;
+}
+
+#banner2 .owl-item .product-card:hover .card-img img {
+    max-width: 70%;
+}
+.product-des{
+    position: relative;
+    padding-left: 5%;
+    left: 0;
+    bottom: 8px;
+
+}
+#banner2 .owl-carousel .owl-nav{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      margin-top: -20px;
+    }
+  #banner2 .owl-carousel .owl-nav button{
+      height: 60px;
+      width: 40px;
+      line-height: 60px;
+      text-align: center;
+      color: rgb(1, 10, 15);
+      font-size: 25px;
+      position: absolute;
+      margin-left: -22px;
+      margin-right: -13px;
+      transition: all 0.2s ease;
+      padding: 0;
+      border-radius: 5px;
+      outline: none;
+    }
+    
+  #banner2 .owl-carousel .owl-nav .owl-prev{
+          left:0;
+    }
+  #banner2 .owl-carousel .owl-nav .owl-next{
+          right:0;
+    }

@@ -1,0 +1,40 @@
+{% load static %}
+
+<div class="container-fluid py-2 wow fadeInUp" data-wow-delay="1.5s">
+      <div class="">
+            <div class="main-cownDown" style=" background-image: url('{% static 'img/countdown.jpg' %}')">
+            <div class="col-md-6 text-center py-4">
+              <div class="wow fadeInUp" data-wow-delay="2s" data-wow-duration="1.2s">
+                <h2>Deal Of The Week</h2>
+                <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <p><strong>$35.00 /</strong> HanBag</p>
+        
+                <div id="TDate">31 December 2022</div>
+              </div>
+              <div class="d-flex justify-content-around wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1.2s">
+                <div class="p-2 shadow text-center">
+                  <h3 id="day">00</h3>
+                  <p>Days</p>
+                </div>
+                <div class="p-2 shadow text-center">
+                  <h3 id="hour">00</h3>
+                  <p>Hours</p>
+                </div>
+                <div class="p-2 shadow text-center">
+                  <h3 id="min">00</h3>
+                  <p>Minuites</p>
+                </div>
+                <div class="p-2 shadow text-center">
+                  <h3 id="sec">00</h3>
+                  <p>Seconds</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+            </div>
+          </div>
+</div>
+
+
+<link rel="stylesheet" href="{% static 'css/banner/countbanner.css' %}" type="text/css">
+<script src="{% static 'js/countbanner.js' %}"></script> 

@@ -196,27 +196,33 @@
       display: none;
 }
 
+
 .megamenu {
-      position: static;
-     
+      position: static!important;
     }
 .megamenu .dropdown-menu {
       border-radius: 0;
       background: #0a1c24;
-      transition: all 0.3s ease;
+      opacity: 0;
+      display: none;
+      width: 100%;
+      transition: 0.1s ease-out;
       opacity: 0;
       display: block;
+      transform: translateY(-10%);
       visibility: hidden;
-      width: 100%;
 }
 .megamenu h6{
       margin-left: -2px;
       cursor: pointer;
 }
 
-.dropdown:hover .dropdown-menu{
+.megamenu:hover .dropdown-menu{
+      transition: 0.5s ease-in;
       opacity: 1;
+      transform: translateY(0px);
       visibility: visible;
+      
     }
 
 @media(min-width:991px){
@@ -263,6 +269,7 @@
 	.dropdown-label, .push-menu {
 		display: block;
             padding-bottom: 0;
+            cursor: pointer;
 		
 	}
       .dropdown-label i{
